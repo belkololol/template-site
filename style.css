@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    font-family: Open Sans;
+}
+
+
+/* шапка */
+
+header {
+    background-image: url(img/header-bg.png);
+    height: 800px;
+}
+
+.menu-container ul li {
+    color: #FFFFFF;
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.menu-container ul li:hover {
+    text-shadow: 0px 0px 1px yellow;
+    cursor: pointer;
+}
+
+.menu-container ul {
+    margin: 0;
+    padding: 0;
+    width: 530px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-container {
+    padding: 25px 0 150px 0;
+}
+
+.menu-container {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.menu-container img {
+    padding: 0 55px;
+}
+
+.restaurant-conteiner {
+    text-align: center;
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.restaurant-conteiner>p {
+    font-size: 12px;
+    transform: rotate(-90deg);
+    margin: 0;
+    position: absolute;
+    left: -150px;
+    top: 110px;
+}
+
+.restaurant-conteiner div p {
+    letter-spacing: 10px;
+    font-size: 12px;
+    margin: 0;
+}
+
+.restaurant-conteiner h1 {
+    font-family: "Banny";
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 96px;
+    margin: 0;
+}
+
+.restaurant-conteiner p {
+    color: #FFFFFF;
+}
+
+.band {
+    width: 60px;
+    height: 5px;
+    background: #E8C300;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.restaurant-conteiner button {
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+
+.restaurant-conteiner button:hover {
+    box-shadow: 0px 0px 2px yellow;
+    cursor: pointer;
+}
+
+.buttons a:first-of-type {
+    margin-right: 40px;
+}
+
+.buttons a:first-of-type button {
+    background: #E8C300;
+}
+
+.buttons a:last-of-type button {
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.icon-contact {
+    width: 20px;
+    position: absolute;
+    right: -20px;
+    top: 0;
+}
+
+.icon-contact a div {
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.icon-contact a div:hover {
+    box-shadow: 0px 0px 1px yellow;
+    cursor: pointer;
+}
+
+.icon-contact a:first-of-type div {
+    background-image: url(img/facebook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.icon-contact a:nth-last-of-type(2) div {
+    background-image: url(img/twitter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.icon-contact a:last-of-type div {
+    background-image: url(img/insta.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    margin: 90px auto;
+    position: relative;
+}
+
+.circle:before {
+    content: "";
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: absolute;
+    top: -11px;
+    left: -11px;
+}
+
+.arrow {
+    width: 7px;
+    height: 7px;
+    border-top: 3px solid #333333;
+    border-right: 3px solid #333333;
+    transform: rotate(135deg);
+    position: relative;
+    left: 15px;
+    top: 14px;
+}
+
+
+/* about-us */
+
+.about-us {
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.about-us-conteiner {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 80px;
+}
+
+.about-us-conteiner h2 {
+    font-family: "Banny";
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.about-us-conteiner p:first-of-type {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.about-us-image {
+    width: 580px;
+    height: 580px;
+    background: url(img/about-img.png) no-repeat;
+    position: relative;
+}
+
+.about-us-image:after {
+    content: "";
+    width: 250px;
+    height: 250px;
+    border: 20px solid #E8C300;
+    display: block;
+    position: absolute;
+    top: 145px;
+    right: -60px;
+}
+
+@font-face {
+    font-family: "Banny";
+    src: url("/font/Banny-Round.otf") format("truetype");
+}
