@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Open Sans;
+    font-family: "Open Sans", sans-serif;
 }
 
 
@@ -86,7 +86,6 @@ header {
     background: #E8C300;
     border-radius: 50px;
     display: inline-block;
-    margin-bottom: 30px;
 }
 
 .restaurant-conteiner button {
@@ -103,6 +102,10 @@ header {
 .restaurant-conteiner button:hover {
     box-shadow: 0px 0px 2px yellow;
     cursor: pointer;
+}
+
+.buttons {
+    margin-top: 30px;
 }
 
 .buttons a:first-of-type {
@@ -190,9 +193,9 @@ header {
 }
 
 
-/* about-us */
+/* about-us and master-chef */
 
-.about-us {
+.section-conteiner {
     margin: 100px 0;
     display: flex;
     align-items: center;
@@ -200,28 +203,51 @@ header {
     overflow: hidden;
 }
 
-.about-us-conteiner {
+.master-chef {
+    background: url(img/specialty.png);
+    height: 675px;
+    position: relative;
+}
+
+.description-conteiner {
     text-align: center;
     max-width: 600px;
     margin: 0 80px;
 }
 
-.about-us-conteiner h2 {
+.master-chef-conteiner {
+    color: white;
+}
+
+.section-heading {
     font-family: "Banny";
     font-size: 36px;
     text-transform: uppercase;
+    margin: 10px;
 }
 
-.about-us-conteiner p:first-of-type {
+.about-us-conteiner p:first-of-type,
+.master-chef-conteiner p:first-of-type {
     font-weight: bold;
     font-size: 18px;
 }
 
-.about-us-image {
+.section-image {
     width: 580px;
     height: 580px;
-    background: url(img/about-img.png) no-repeat;
     position: relative;
+}
+
+.about-us-image {
+    background: url(img/about-img.png) no-repeat;
+}
+
+.master-chef-image {
+    background: url(img/Rectangle.png) no-repeat;
+}
+
+.book-a-table-image {
+    background: url(img/booktable.png) no-repeat;
 }
 
 .about-us-image:after {
@@ -232,7 +258,49 @@ header {
     display: block;
     position: absolute;
     top: 145px;
-    right: -60px;
+    right: -100px;
+}
+
+.master-chef-image:after {
+    content: "";
+    width: 250px;
+    height: 250px;
+    border: 20px solid #E8C300;
+    display: block;
+    position: absolute;
+    top: 145px;
+    left: -100px;
+}
+
+.master-chef p:first-child {
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: auto;
+    font-size: 12px;
+    letter-spacing: 10px;
+}
+
+.form-book-a-table input,
+.form-book-a-table select {
+    width: 275px;
+    height: 60px;
+    background: #E5E5E5;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    outline: none;
+    font-size: 14px;
+    padding: 0 15px 0 15px;
+    box-sizing: border-box;
+}
+
+.form-book-a-table {
+    width: 570px;
+}
+
+.book-a-table .description-conteiner .band {
+    margin-bottom: 20px;
 }
 
 @font-face {
