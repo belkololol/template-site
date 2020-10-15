@@ -193,7 +193,7 @@ header {
 }
 
 
-/* about-us and master-chef */
+/* about-us, master-chef and book a table*/
 
 .section-conteiner {
     margin: 100px 0;
@@ -293,7 +293,18 @@ header {
     font-size: 14px;
     padding: 0 15px 0 15px;
     box-sizing: border-box;
+    color: #757575;
 }
+.form-book-a-table select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background-image: url('img/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+}
+
 
 .form-book-a-table {
     width: 570px;
@@ -303,7 +314,15 @@ header {
     margin-bottom: 20px;
 }
 
+.first-point {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
 @font-face {
     font-family: "Banny";
-    src: url("/font/Banny-Round.otf") format("truetype");
+    src: url("font/Banny-Round.otf") format("truetype");
 }

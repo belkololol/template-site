@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="timedropper-master/timedropper.css"> 
+    <script src="jquery-3.5.1.js"></script>
+    <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="timedropper-master/timedropper.js"></script>
     <title>Document</title>
+    
 </head>
 
 <body>
@@ -59,8 +65,11 @@
         <div class="about-us-conteiner description-conteiner">
             <h2 class="section-heading">about-us</h2>
             <div class="band"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
-            <p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor
+                magna.</p>
+            <p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed
+                dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
+                tincidunt feugiat diam convallis
                 pharetra. Nulla facilisis semper laoreet.</p>
         </div>
         <div class="about-us-image section-image"></div>
@@ -72,8 +81,11 @@
         <div class="master-chef-conteiner description-conteiner">
             <h2 class="section-heading">MASTER CHEF</h2>
             <div class="band"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
-            <p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor
+                magna.</p>
+            <p>Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed
+                dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
+                tincidunt feugiat diam convallis
                 pharetra. Nulla facilisis semper laoreet.</p>
         </div>
     </section>
@@ -85,21 +97,21 @@
             <form action="" class="form-book-a-table">
                 <input type="text" placeholder="Name"><input type="text" placeholder="Email">
                 <input type="text" placeholder="Phone"><select>
-                    <option style="display: none">People</option>
+                    <option class="first-point">People</option>
                     <option>1-2 persons</option>
                     <option>3-4 persons</option>
                     <option>5-8 persons</option>
                 </select>
-                <input type="text" placeholder="Date (mm/dd)"><select>
-                    <option></option>
-                    <option></option>
-                    <option></option>
-                </select>
+                <input type="text" placeholder="Date (mm/dd)" id="datepicker"><input type="text" placeholder="Time" class="input-time"><input type="text" class="timing hidden" id="time">
             </form>
         </div>
         </div>
         <div class="book-a-table-image section-image"></div>
     </section>
+    
+    <script src="script.js"> </script>
+    
+    
 </body>
 
 </html>
