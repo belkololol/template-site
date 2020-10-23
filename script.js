@@ -57,6 +57,6 @@ function viewImages() {
     }
     slideIndex++;
     showSlides(slideIndex);
-    setTimeout("viewImages()",3000);
+    setTimeout("viewImages()",5000);
 } 
 viewImages()

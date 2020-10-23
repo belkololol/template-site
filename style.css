@@ -288,7 +288,7 @@ header {
     display: block;
     position: absolute;
     top: 145px;
-    right: -100px;
+    right: -90px;
 }
 
 .square-left:after {
@@ -299,7 +299,7 @@ header {
     display: block;
     position: absolute;
     top: 145px;
-    left: -100px;
+    left: -90px;
 }
 
 .master-chef p:first-child {
@@ -379,6 +379,7 @@ header {
 
 .slider {
     position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .slider-dots {
@@ -404,27 +405,215 @@ header {
     background-color: #aaa;
 }
 
-.slider .item {
+.slider .item, .container-list  {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 5s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    
 }
 @-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
+    0% {
+        margin-left: 100%;
+        width: 100%; 
+        opacity: 0;
+      }
+    
+      30% {
+        margin-left: 0%;
+        width: 100%;
+        opacity: 1;
+      }
+
+      85% {
+        opacity: 1; 
+      }
+      100% {
+        opacity: 0.1;
+      }
 }
 @keyframes fade {
+    0% {
+        margin-left: 100%;
+        width: 100%; 
+        opacity: 0;
+      }
+    
+      30% {
+        margin-left: 0%;
+        width: 100%;
+        opacity: 1;
+      }
+
+      85% {
+        opacity: 1; 
+      }
+      100% {
+        opacity: 0.1;
+      }
+}
+
+
+/* delicious-menu */
+
+.delicious-menu {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.delicious-menu > p:first-of-type {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px 0 50px 0;
+}
+
+.menu-list li {
+    padding: 10px 30px;
+    font-size: 12px;
+    display: inline-block;
+    list-style: none;
+}
+
+.menu-list li:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu-list li:not(:last-child) {
+    border-right: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.container-list {
+    font-family: Banny;
+    font-size: 18px;
+    text-transform: uppercase;
+    max-width: 345px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 100px 100px;
+}
+.container-list {
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-list p:not(:last-of-type) {
+   margin: 0;
+}
+.container-list p:last-of-type {
+    margin: 0 0 25px 0;
+ }
+
+.description-item {
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    color: grey;
+    text-transform: lowercase;
+}
+
+.container-list  {
+    -webkit-animation-name: menu;
+    -webkit-animation-duration: 0.7s;
+    animation-name: menu;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes menu {
     from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
+        margin-top: 50%;
+        opacity: 0;
+      }
+    
+      to {
+        margin-top: 0%;
+        opacity: 1;
+      }
+}
+@keyframes menu {
+    from {
+        margin-top: 50%;
+        opacity: 0;
+      }
+    
+      to {
+        margin-top: 0%;
+        opacity: 1;
+      }
+}
+
+/* private-events */
+
+.private-events {
+    background: url(img/private.png);
+    height: 675px;
+    position: relative; 
+}
+
+.private-events-image1  {
+    background: url(img/private-img1.png) no-repeat;
+    position: relative;
+}
+
+.private-events-image2  {
+    background: url(img/private-img2.png) no-repeat;
+    position: relative;
+}
+
+.private-events-image1:before {
+    content: "weddings";
+    position: absolute;
+    height: 80;
+    height: 80px;
+    width: 477px;
+    background-color: black;
+    top: 248px;
+    left: 248px;
+    color: white;
+    transform: rotate(90deg);
+    font-family: Banny;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.private-events-image2:before {
+    content: "corporate pzrties";
+    position: absolute;
+    height: 80px;
+    width: 477px;
+    background-color: black;
+    bottom: 252px;
+    right: 252px;
+    color: white;
+    transform: rotate(270deg);
+    font-family: Banny;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+
+.private-events p:first-child {
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: auto;
+    font-size: 12px;
+    letter-spacing: 10px;
 }
 
 @font-face {
