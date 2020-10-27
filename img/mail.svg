@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="50px" viewBox="0 0 64 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>mail</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mail" fill="#E8C300" fill-rule="nonzero">
+            <path d="M63.125,2.977 C62.223,1.656 60.706,0.783 58.994,0.783 L5.006,0.783 C3.33,0.783 1.848,1.625 0.939,2.9 L32.099,28.882 L63.125,2.977 Z" id="Path"></path>
+            <path d="M0.006,7.328 L0.006,44.217 C0.006,46.967 2.256,49.217 5.006,49.217 L58.994,49.217 C61.744,49.217 63.994,46.967 63.994,44.217 L63.994,7.461 L32.099,34.09 L0.006,7.328 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

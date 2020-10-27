@@ -8,10 +8,6 @@ $(".input-time").click(function (event) {
 });
 
 
-
-
-
-
 $(function () {
     var date = new Date();
     date.setDate(date.getDate());
@@ -38,7 +34,6 @@ showSlides(slideIndex)
 
 
 
-/* Основная функция слайдера */
 function showSlides(slideIndex) {
 
     for (let i = 0; i < slides.length; i++) {
@@ -60,3 +55,18 @@ function viewImages() {
     setTimeout("viewImages()",5000);
 } 
 viewImages()
+
+// плавный скролл
+
+const anchors = document.querySelectorAll('a[href^="#"]');
+
+anchors.forEach(el => {
+    el.addEventListener('click', (e) => {
+        e.preventDefault();
+        const blockID = el.getAttribute('href');
+        document.querySelector(blockID).scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        })
+    })
+})
