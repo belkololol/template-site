@@ -1,11 +1,13 @@
 body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
+    position: relative
 }
 
-html {
+html, body {
     overflow-x: hidden;
-}
+  }
+ 
 
 /* шапка */
 
@@ -624,8 +626,6 @@ header {
 
 /* фотослайдер */
 
-
-
 .photo-slider>div {
     -webkit-animation-name: photo;
     -webkit-animation-duration: 6s;
@@ -633,8 +633,8 @@ header {
     animation-name: photo;
     animation-duration: 6s;
     animation-iteration-count: infinite;
-    
 }
+
 .photo-slider-conteiner {
     position: relative;
 }
@@ -659,26 +659,20 @@ header {
 }
 
 @-webkit-keyframes photo {
-    0% {
+    from {
         transform: translate(0%);
     }
-    50% {
+    to {
         transform: translate(-100%);
-    }
-    100% {
-        transform: translate(0%);
     }
 }
 
 @keyframes photo {
-   0% {
+    from {
         transform: translate(0%);
     }
-    50% {
+    to {
         transform: translate(-100%);
-    }
-    100% {
-        transform: translate(0%);
     }
 }
 
@@ -1520,16 +1514,19 @@ footer {
         height: 130px;
     }
 }
+
 @media (max-width: 630px) {
     .container-list {
         width: 43%;
     }
 }
+
 @media (max-width: 590px) {
     .container-list {
         width: 45%;
     }
 }
+
 @media (max-width: 560px) {
     .table {
         width: 90%;
@@ -1768,13 +1765,14 @@ footer {
         padding: 10px 8px;
     }
 }
+
 @media (max-width: 405px) {
-.container-list {
-    font-size: 9px;
-}
-.contact form input {
-    width: 100%;
-}
+    .container-list {
+        font-size: 9px;
+    }
+    .contact form input {
+        width: 100%;
+    }
 }
 
 @media (max-width: 370px) {
