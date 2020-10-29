@@ -1589,8 +1589,8 @@ footer {
     }
     .menu-container ul li {
         font-size: 10px;
-        padding: 5px;
-        margin: 0;
+        padding: 0px;
+        margin-bottom: 10px;
     }
     .menu-container img {
         width: 50px;
