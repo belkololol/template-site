@@ -624,9 +624,7 @@ header {
 
 /* фотослайдер */
 
-.photo-slider {
-    overflow: hidden;
-}
+
 
 .photo-slider>div {
     -webkit-animation-name: photo;
@@ -635,6 +633,9 @@ header {
     animation-name: photo;
     animation-duration: 6s;
     animation-iteration-count: infinite;
+    
+}
+.photo-slider-conteiner {
     position: relative;
 }
 
@@ -658,20 +659,26 @@ header {
 }
 
 @-webkit-keyframes photo {
-    from {
+    0% {
         transform: translate(0%);
     }
-    to {
+    50% {
         transform: translate(-100%);
+    }
+    100% {
+        transform: translate(0%);
     }
 }
 
 @keyframes photo {
-    from {
+   0% {
         transform: translate(0%);
     }
-    to {
+    50% {
         transform: translate(-100%);
+    }
+    100% {
+        transform: translate(0%);
     }
 }
 
