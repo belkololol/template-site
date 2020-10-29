@@ -1583,9 +1583,13 @@ footer {
     .restaurant-conteiner {
         width: 95%;
     }
+    .menu-container {
+        align-items: center;
+    }
     .menu-container ul {
         flex-direction: column;
         width: auto;
+        height: auto;
     }
     .menu-container ul li {
         font-size: 10px;
