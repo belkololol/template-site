@@ -12,7 +12,7 @@ html, body {
 /* шапка */
 
 header {
-    background-image: url(img/header-bg.png);
+    background-image: url(img/header-bg.jpg);
     height: 800px;
 }
 
@@ -216,13 +216,13 @@ header {
 }
 
 .master-chef {
-    background: url(img/specialty.png);
+    background: url(img/specialty.jpg);
     height: 675px;
     position: relative;
 }
 
 .chocolate-pancakes {
-    background: url(img/specialty.png);
+    background: url(img/specialty.jpg);
     height: 675px;
     position: relative;
 }
@@ -557,7 +557,7 @@ header {
 /* private-events */
 
 .private-events {
-    background: url(img/private.png);
+    background: url(img/private.jpg);
     height: 675px;
     position: relative;
 }
