@@ -1577,6 +1577,9 @@ footer {
 }
 
 @media (max-width: 500px) {
+    .restaurant-conteiner {
+        width: 95%;
+    }
     .menu-container ul {
         flex-direction: column;
         width: auto;
